@@ -1,0 +1,8 @@
+.pio
+.vscode
+lib
+logs
+test
+
+*.txt
+
