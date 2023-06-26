@@ -43,7 +43,7 @@ void MQTTPublishData_() {
 
     if (client.connect(settings.MQTTClientID, settings.MQTTUser, settings.MQTTPass)) {
       rlog_i("mqtt", "sending...");
-      client.publish(sTopic.c_str(), sValue.c_str(), true);
+      client.publish(sTopic.c_str(), sValue.c_str(), false);
       client.loop();
       client.disconnect();
       rlog_i("mqtt", "disconnect");
